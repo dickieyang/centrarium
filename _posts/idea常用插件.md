@@ -12,7 +12,7 @@ categories: Idea
 ### Top2. Background Image Plus
 > 仅仅一张背景图片就足以让身后的产品妹子把我和其他程序员区分开来！
 ### Top3. Maven Helper
-> 这个一个必须与maven一起工作的插件。它提供了运行/调试当前测试文件的功能。 如果maven-surefire-plugin配置为跳过或排除测试，  
+> 这个一个必须与maven一起工作的插件。它提供了运行/调试当前测试文件的功能。 如果maven-surefire-plugin配置为跳过或排除测试，
 > “verify”目标将会被启用。它还提供了运行/调试当前文件所在模块的快捷操作，以及简化查找和排除冲突依赖关系的方法。[官网](https://plugins.jetbrains.com/plugin/4441-jrebel-for-intellij)
 ### Top4. stackoverflow
 > 这一看似平淡的右键stackoverflow，却把其中的闷骚体现的淋漓尽致：我就这么叼，我就不去浏览器里查，只有右键才和我的右手匹配。
