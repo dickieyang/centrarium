@@ -9,7 +9,7 @@ categories: 推送
 ### 利用Eventsource对象实现服务器推送
   - **处理过程**  
 	客户端建立EventSource对象，对服务器通过http协议不断进行请求。服务器对客户端的响应数据格式有四部分构成，event，data，id，空格行。客户端接收到服务器端的响应数据之后，根据event事件值，找到EventSource对象对应的事件监听器。
-	- 例如，event值为load，那么客户端收到响应数据之后，解析到event值为load。客户端为EventSource对象添加该事件的监听器，`EventSource.onLoad = function(){ //处理服务器端的响应数据 }或者 EventSource.addEventListener("load",function(){ //处理服务器端的响应数据 })`。
+	- 例如，event值为load，那么客户端收到响应数据之后，解析到event值为load。客户端为EventSource对象添加该事件的监听器，`EventSource.onLoad = function(){ //处理服务器端的响应数据 }或者EventSource.addEventListener("load",function(){ //处理服务器端的响应数据 })`。
 	- EventSource有三个默认的监听器，分别监听open，message，error事件。客户端和服务器端进行连接时，将会触发open事件，执行EventSource.onOpen = function(){}或者 EventSource.addEventListener("open",function(){ })。对于message事件，当服务器端响应的数据没有指定事件类型时，将会默认触发客户端的message事件。
 	- 服务器端响应的报文数据中，id 表示事件event的id，用户可以自定义。并且响应的类型为 text/event-stream 类型。
 
