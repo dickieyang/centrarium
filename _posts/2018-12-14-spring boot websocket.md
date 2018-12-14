@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Logback配置"
-date:   2017-12-26
+title:  "spring boot websocket"
+date:   2018-12-14
 author: Dickie Yang
-categories: Java
-tags: logback code
+categories: java
+tags: springboot websocket
 ---
 
 
@@ -138,7 +138,6 @@ Welcome<br/>
     }
 </script>
 </html>
-
 ```
 ## STOMP实现
 ### 服务端代码
@@ -175,8 +174,6 @@ public class StompWebSocketConfig implements WebSocketMessageBrokerConfigurer {
                 .setAllowedOrigins("*");
 //                .withSockJS();
     }
-
-
 }
 ```
 > SocketEventListener.java
@@ -281,8 +278,4 @@ public class WebSocketEventListener {
 
 </body>
 </html>
-
-
-
-
 ```
